@@ -15,7 +15,7 @@ I build proactive AI teammates and scalable agent systems. Currently, I'm a Prin
 
 ## ✍️ Latest Writing
 <ul>
-  {% for post in site.categories['Writing'] limit:5 %}
+  {% for post in site.tags['Writing'] limit:5 %}
     <li>
       <a href="{{ post.url }}">{{ post.title }}</a>
       <small style="color: #888;">{{ post.date | date: "%B %d, %Y" }}</small>
@@ -25,7 +25,7 @@ I build proactive AI teammates and scalable agent systems. Currently, I'm a Prin
 
 ## 🛠 Prototyping
 <ul>
-  {% for post in site.categories['Prototyping'] limit:5 %}
+  {% for post in site.tags['Prototyping'] limit:5 %}
     <li>
       <a href="{{ post.url }}">{{ post.title }}</a>
       <small style="color: #888;">{{ post.date | date: "%B %d, %Y" }}</small>
