@@ -1,23 +1,23 @@
----
----
-
-@import "minimal-mistakes";
+--- --- @import "minimal-mistakes";
 
 .archive__item {
-    margin-bottom: 0.5em; /* Reduced from default */
-    border-bottom: 1px solid #eee; /* Add separator */
+    margin-bottom: 0.5em;
+    /* Reduced from default */
     padding-bottom: 0.5em;
 }
 
 .archive__item-title {
     margin-bottom: 0.1em;
-    font-size: 1.1em; /* Reduced font size */
-    font-family: sans-serif; /* Clean look */
+    font-size: 1.1em;
+    /* Reduced font size */
+    font-family: sans-serif;
+    /* Clean look */
 }
 
 .archive__item-excerpt {
     margin-top: 0;
-    font-size: 0.85em; /* Smaller excerpt */
+    font-size: 0.85em;
+    /* Smaller excerpt */
     color: #666;
     line-height: 1.4;
 }
