@@ -2,18 +2,18 @@
 layout: single
 author_profile: true
 permalink: /
-title: "Hi, I'm Ronald."
-excerpt: "Principal Applied Scientist | AI Agents | Builder"
+title: "Ronald Wu."
+excerpt: "Building AI Agents & Scalable Systems."
 ---
 
-I build proactive AI teammates and scalable agent systems. Currently, I'm a Principal Applied Scientist at Oracle. Outside of work, I also...
+My focus is on creating proactive AI teammates and scalable agent systems. Currently, I'm a Principal Applied Scientist at Oracle. Outside of work, I also...
 
-* **[Write](/writing/)** about agentic workflows, system architecture, and my journey to ...
-* **[Prototype](/prototyping/)** new tools like "Nexus Foundation" and personal productivity bots.
+* **[Sharing thoughts on](/writing/)** agentic workflows, system architecture, and my journey to ...
+* **[Building experiments like](/prototyping/)** "Nexus Foundation" and personal productivity bots.
 
 ---
 
-## ✍️ Latest Writing
+## ✍️ Articles
 <ul>
   {% for post in site.tags['Writing'] limit:5 %}
     <li>
