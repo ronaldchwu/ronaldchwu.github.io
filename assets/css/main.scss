@@ -1,0 +1,33 @@
+---
+---
+
+@import "minimal-mistakes";
+
+.archive__item {
+    margin-bottom: 0.5em; /* Reduced from default */
+    border-bottom: 1px solid #eee; /* Add separator */
+    padding-bottom: 0.5em;
+}
+
+.archive__item-title {
+    margin-bottom: 0.1em;
+    font-size: 1.1em; /* Reduced font size */
+    font-family: sans-serif; /* Clean look */
+}
+
+.archive__item-excerpt {
+    margin-top: 0;
+    font-size: 0.85em; /* Smaller excerpt */
+    color: #666;
+    line-height: 1.4;
+}
+
+/* Adjustments for the date span to ensure it doesn't break poorly on mobile */
+@media (max-width: 600px) {
+    .archive__item-date {
+        float: none !important;
+        display: block;
+        margin-top: 0;
+        margin-bottom: 0.2em;
+    }
+}

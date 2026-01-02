@@ -8,7 +8,7 @@ excerpt: "Principal Applied Scientist | AI Agents | Builder"
 
 I build proactive AI teammates and scalable agent systems. Currently, I'm a Principal Applied Scientist at Oracle. Outside of work, I also...
 
-* **[Write](/writing/)** about agentic workflows, system architecture, and my journey to L5+.
+* **[Write](/writing/)** about agentic workflows, system architecture, and my journey to ...
 * **[Prototype](/prototyping/)** new tools like "Nexus Foundation" and personal productivity bots.
 
 ---

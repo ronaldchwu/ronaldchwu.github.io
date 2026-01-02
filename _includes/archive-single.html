@@ -1,0 +1,26 @@
+{% if post.header.teaser %}
+  {% capture teaser %}{{ post.header.teaser }}{% endcapture %}
+{% else %}
+  {% assign teaser = site.teaser %}
+{% endif %}
+
+{% if post.id %}
+  {% assign title = post.title | markdownify | remove: "<p>" | remove: "</p>" %}
+{% else %}
+  {% assign title = post.title %}
+{% endif %}
+
+<article class="archive__item" itemscope itemtype="https://schema.org/CreativeWork">
+  <h2 class="archive__item-title no_toc" itemprop="headline">
+    {% if post.link %}
+      <a href="{{ post.link }}">{{ title }}</a> <a href="{{ post.url | relative_url }}" rel="permalink"><i class="fas fa-link" aria-hidden="true" title="permalink"></i><span class="sr-only">Permalink</span></a>
+    {% else %}
+      <a href="{{ post.url | relative_url }}" rel="permalink">{{ title }}</a>
+    {% endif %}
+    <span class="archive__item-date" style="float: right; font-size: 0.6em; font-weight: normal; margin-top: 0.5em; color: #666;">
+      <i class="far fa-calendar-alt" aria-hidden="true"></i> {{ post.date | date: "%B %d, %Y" }}
+    </span>
+  </h2>
+  
+  {% if post.excerpt %}<p class="archive__item-excerpt" itemprop="description">{{ post.excerpt | markdownify | strip_html | truncate: 160 }}</p>{% endif %}
+</article>
