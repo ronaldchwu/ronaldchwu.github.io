@@ -2,7 +2,7 @@
 title: "Prototyping"
 permalink: /prototyping/
 layout: archive
-author_profile: true
+author_profile: false
 ---
 
 {% assign posts = site.tags['Prototyping'] %}

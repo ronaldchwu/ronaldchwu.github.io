@@ -1,6 +1,6 @@
 ---
 layout: single
-author_profile: true
+author_profile: false
 permalink: /
 title: "Down for Maintenance"
 excerpt: "We'll be back shortly."

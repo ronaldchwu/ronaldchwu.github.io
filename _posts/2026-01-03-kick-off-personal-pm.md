@@ -1,17 +1,14 @@
 ---
-title: "Post Title Here"
-date: 2026-01-02
+title: "Kick off Personal PM with Claude Code"
+date: 2026-01-03
 categories: 
   - AI Engineering
 tags:
-  - Agents
-  - Prototyping
+  - Notes
 classes: wide
 toc: true
 toc_label: "Table of Contents"
 toc_icon: "cog"
-header:
-  teaser: /assets/images/teaser-image.jpg
 ---
 
 ## Raw Notes
@@ -20,7 +17,10 @@ header:
 
 ---
 
-- 
+- Dddddddd
+
+
+
 
 ---
 
