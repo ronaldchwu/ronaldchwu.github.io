@@ -1,0 +1,59 @@
+---
+title: "This is a 2nd Test Post"
+date: 2026-01-02
+categories: 
+  - AI Engineering
+tags:
+  - Agents
+  - Prototyping
+classes: wide
+toc: true
+toc_label: "Table of Contents"
+toc_icon: "cog"
+header:
+  teaser: /assets/images/teaser-image.jpg
+
+---
+
+Your intro text goes here. The "toc: true" above automatically generates a Table of Contents based on your headers.
+
+## 1. Problem Definition
+
+There are some texts
+
+## 2. The Solution
+
+Here are more texts
+
+$$E = mc^2$$
+
+```py
+import os
+from typing import List
+
+class Agent:
+    """
+    A simple proactive AI teammate class.
+    """
+    def __init__(self, name: str, tools: List[str]):
+        self.name = name
+        self.tools = tools
+        self.memory = []
+
+    def think(self, task: str) -> str:
+        """Process the task and decide on an action."""
+        # Simulated Chain-of-Thought
+        plan = f"1. Analyze {task}\n2. Select tool from {self.tools}"
+        self.memory.append(plan)
+        return plan
+
+    def act(self, action: str):
+        print(f"[{self.name}] Executing: {action}")
+
+# Initialize your AI Teammate
+my_agent = Agent(name="Nexus", tools=["Calendar", "Email"])
+print(my_agent.think("Schedule meeting with DeepMind"))
+```
+
+
+
