@@ -1,6 +1,6 @@
 ---
 title: "First Personal Productivity Experiment"
-date: 2026-01-06
+date: 2026-01-05
 categories: 
   - AI Engineering
 tags:

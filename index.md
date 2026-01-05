@@ -6,7 +6,7 @@ title: "Ronald Wu."
 excerpt: "Building AI Agents & Scalable Systems."
 ---
 
-My focus is on creating proactive AI teammates and scalable agent systems. Currently, I'm a Principal Applied Scientist at Oracle. Outside of work, I also...
+My focus is on creating proactive AI teammates and scalable agent systems. Currently, I'm a Principal Applied Scientist at Oracle.
 
 * **[Sharing thoughts on](/writing/)** agentic workflows, system architecture, and my journey to ...
 * **[Building experiments like](/prototyping/)** "Nexus Foundation" and personal productivity bots.
