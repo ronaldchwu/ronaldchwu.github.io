@@ -12,55 +12,6 @@ toc_label: "Table of Contents"
 toc_icon: "cog"
 ---
 
-## Raw Notes
-
-*Quick capture zone — type thoughts and work notes here as they come. Refactor into proper sections below later.*
-
----
-
-- Testing Claude Code to create a personal PM workspace (`/Users/ronaldwu/Projects/Q1CY26/playground/02-pm-workspace/`).
-- Goal: see how quickly I can define and resolve a personal productivity problem, using credit card statement analysis as the example.
-- How I used the AI tools together
-  - Antigravity on the left screen as “VSCode with a clear implementation plan + walkthrough + multi‑agent task management.”
-  - Claude Chat + Claude Code on the right: most natural and smooth workflow, with great user interaction/collaboration.
-  - Typora: updating + co‑editing `.md` files in near realtime (TODO: xxxxxx).
-- Antigravity: handy implementation plan and walkthrough, but only with Flash. 3.0 Pro will directly edit `.md` files.
-- Claude: super fluent; uses the web search tool effectively; understands intent and shows progress clearly.
-  - 3.0 Flash’s review of the POC codebase only found superficial issues, whereas Codex CLI found a few UI/UX flow inconsistencies vs. user stories.
-  - Even Opus mis‑implemented my desired user story (hallucinated a `corrections.json` that isn’t part of the story).
-    - Maybe Opus was doing best‑practice detailed design on top of my user story.
-- Codex CLI:
-  - Can’t figure out what tools/packages are available; gets stuck often.
-  - Tends to overdo and lose focus on key changes (e.g., PRD v1.1 → v1.2 only had a few minor changes, but Codex suggested other improvements). Antigravity’s implementation plan is more useful.
-- Overall observations & learnings
-  - Good first step of agent‑human collaboration.
-  - PRD: initial scope was too huge. I soon realized that from v1.1/v1.2 onward, no interactive UI/UX is needed. LLMs tend to over‑design and over‑plan. Need careful steering for a minimal POC/MVP.
-  - LLMs still read too many lines; token usage is not efficient.
-  - Technically: it’s easy to send a PDF into chat and get results, but the real value is leveraging historical data with robust, consistent data I/O checks.
-  - Current manual workflow is not smooth.
-    - When one AI agent raises concerns, it’s hard to reconcile with another agent’s design logic/justification. The resulting codebase can become a hybrid and unstable thing—like multiple ICs working on the same repo.
-      - Maybe it’s better to have one agent totally focused on PRD, coding, reviewing, etc.
-    - The lack of `/command` or skill makes prompting time‑consuming and redundant.
-    - Starting with NO tests is a mistake—none of the AI agents proactively started even a simple E2E test. Need to add this to `CLAUDE.md` or `AGENTS.md`.
-  - Day 2 (Jan 4, 2026): I got an initial output CSV quickly, but soon ran into bugs and the pipeline stopped working. Debugging became difficult because I hadn’t set up tests properly.
-- Credit card analyzer v1.4 POC
-  - I started using it on my two NAB statements on Jan 5, 2026
-    - Successfully populated 70% of transactions. Saved a lot of copy pasting speeds.
-    - AI Reasoning really help reduce my mental load! It helps me recall the item details smoothly
-
-  - Although my overall time in processing the statements are only reduced by 15%, I feel much more relaxed in doing the task.
-    - Plus, knowing that the efforts I put in (+ User Reasoning) can help future improvement deterministically is very motivating.
-
-  - I see this is a good start of AI-automating my life errands. 
-    - Latency and token usage are terrible (2-3min;  dumpped all CSV files).  But total costs are <$0.5 and seem good enough. Nevertheless, I should be cautious that it is really make me more productive and generating values, not just 'feeling good'.
-    - Improving latency and token usage are still must-do in long term. 
-
-
-
----
-
-## Refined Content
-
 Lately, I've been experimenting with AI tools as collaborators to solve everyday pain points.  Not just for coding, but for product thinking and personal productivity routines.  This post is a short reflection on a small example:  using AI agents to prototype a personal Product Management workspace, with credit card statement analyzer as my first POC (yes, reviewing statement transactions records is a recurring pain).
 
 The PM Workspace lived as a git repo folder. The real goal wasn't the code. It was to see:  How quickly & easily can I define a problem, scope it down, and get something genuinely useful from today's AI agents?
