@@ -58,7 +58,7 @@ plugins:
 author:
   name   : "Ronald Wu"
   avatar : "/assets/images/bio-photo.jpg"
-  bio    : "My awesome biography constrained to a sentence or two goes here."
+  bio    : "Building AI Teammates"
   links:
     - label: "Website"
       icon: "fas fa-fw fa-link"
