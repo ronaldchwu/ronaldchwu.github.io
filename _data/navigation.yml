@@ -1,7 +1,7 @@
 main:
   - title: "Articles"
-    url: /
+    url: /writing/
   - title: "Prototyping"
-    url: /
+    url: /prototyping/
   - title: "About"
-    url: /
+    url: /about/

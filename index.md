@@ -1,21 +1,34 @@
 ---
 layout: single
-author_profile: false
+author_profile: true
 permalink: /
-title: "Down for Maintenance"
-excerpt: "We'll be back shortly."
+title: "Ronald Wu."
+excerpt: "Building AI Agents & Scalable Systems."
 ---
 
-# 👷 Under Maintenance
+My focus is on creating proactive AI teammates and scalable agent systems. Currently, I'm a Principal Applied Scientist at Oracle. Outside of work, I also...
 
-I'm currently making some updates to the site to improve the experience. 
-
-### Stay Connected
-In the meantime, feel free to reach out via:
-* **[X (Twitter)](https://x.com/ronaldhueywu)**
-* **[LinkedIn](https://www.linkedin.com/in/ronaldchwu/)**
-* **[GitHub](https://github.com/ronaldchwu)**
-
-Check back soon for the new updates!
+* **[Sharing thoughts on](/writing/)** agentic workflows, system architecture, and my journey to ...
+* **[Building experiments like](/prototyping/)** "Nexus Foundation" and personal productivity bots.
 
 ---
+
+## ✍️ Articles
+<ul>
+  {% for post in site.tags['Writing'] limit:5 %}
+    <li>
+      <a href="{{ post.url }}">{{ post.title }}</a>
+      <small style="color: #888;">{{ post.date | date: "%B %d, %Y" }}</small>
+    </li>
+  {% endfor %}
+</ul>
+
+## 🛠 Prototyping
+<ul>
+  {% for post in site.tags['Prototyping'] limit:5 %}
+    <li>
+      <a href="{{ post.url }}">{{ post.title }}</a>
+      <small style="color: #888;">{{ post.date | date: "%B %d, %Y" }}</small>
+    </li>
+  {% endfor %}
+</ul>
